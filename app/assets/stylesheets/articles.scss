@@ -1,0 +1,78 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@300;400&display=swap');
+
+$gray: #F4F4F4;
+$dark-gray: #646464;
+$black: #222222;
+$blue: #2985b9;
+
+body {
+  font-family: 'Roboto Slab', serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 100vw;
+  background: $gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px, solid, $dark-gray;
+}
+
+.home-lnk, .new-article-lnk {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: $dark-gray;
+}
+
+.home-lnk:hover, .new-article-lnk:hover {
+  color: black;
+}
+
+.home-lnk {
+  font-size: 20px;
+  padding: 12px;
+}
+
+.new-article-lnk {
+  font-size: 14px;
+  padding: 18px 42px;
+}
+
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  color: $blue;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.line {
+  display: inline;
+}
+
+// .pencil:hover, .trash:hover {
+
+// }

@@ -6,11 +6,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/d9244dbc81.js" crossorigin="anonymous"></script>
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar">
+      <%= link_to 'Loremnimous', articles_path, class: "home-lnk" %>
+      <%= link_to 'New Article', new_article_path, class: "new-article-lnk" %>
+    </div>
     <%= yield %>
   </body>
 </html>

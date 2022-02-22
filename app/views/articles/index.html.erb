@@ -1,0 +1,7 @@
+<div class="container">
+  <% @articles.each do |article| %>
+    <div class="line">
+      <h2><%= link_to "#{article.title}", article_path(article.id), class: 'article-title' %></h2>
+    </div>
+  <% end %>
+</div>
